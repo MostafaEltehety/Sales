@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SalesMvcCore</title>
+    @*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+
+    <link rel="stylesheet" href="~/bootstrap.rtl.css" />
+
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    @* <link rel="stylesheet" href="~/SalesMvcCore.styles.css" asp-append-version="true" /> *@
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="~/css/myStyle.css" asp-append-version="true" />
+
+
+
+
+
+</head>
+
+    <body style="font-family: 'Noto Kufi Arabic', sans-serif;">
+
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+
+
+
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الاساس
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">الاصناف</a></li>
+                                <li><a href="#" class="nav-link">الموردين</a></li>
+                                <li><a href="#" class="nav-link">العملاء</a></li>
+                                <li><a href="#" class="nav-link">المخازن</a></li>
+                                <li><a href="/Categories/Index" class="nav-link">التصنيفات</a></li>
+                                <li><a href="#" class="nav-link">الوحدات</a></li>
+                                <li><a href="#" class="nav-link">شركات المنشأ</a></li>
+                                <li><a href="#" class="nav-link">المناديب</a></li>
+                                <li><a href="#" class="nav-link">المصروفات</a></li>
+                                <li><a href="#" class="nav-link">الايرادات</a></li>
+                                <li><a href="#" class="nav-link">الموظفين</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                المخزن
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">الارصدة الافتتاحية</a></li>
+                                <li><a href="#" class="nav-link">الجرد</a></li>
+                                <li><a href="#" class="nav-link">النواقص</a></li>
+                                <li><a href="#" class="nav-link">تواريخ الصلاحية</a></li>
+                                <li><a href="#" class="nav-link">الكميات المتاحة</a></li>
+                                <li><a href="#" class="nav-link">تعديل الكميات</a></li>
+                                <li><a href="#" class="nav-link">حركات الصنف</a></li>
+                                <li><a href="#" class="nav-link">طباعة الباركود</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الشراء
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">فاتورة الشراء</a></li>
+                                <li><a href="#" class="nav-link">مرتجع الشراء</a></li>
+                                <li><a href="#" class="nav-link">اجمالى الشراء</a></li>
+                                <li><a href="#" class="nav-link">تفاصيل اجمالى الشراء</a></li>
+                                <li><a href="#" class="nav-link">معدل دوران الشراء</a></li>
+
+                            </ul>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                البيع
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">فاتورة البيع</a></li>
+                                <li><a href="#" class="nav-link">مرتجع البيع</a></li>
+                                <li><a href="#" class="nav-link">اجمالى البيع</a></li>
+                                <li><a href="#" class="nav-link">تفاصيل اجمالى البيع</a></li>
+                                <li><a href="#" class="nav-link">معدل دوران البيع</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                المصروفات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">صرف نقدية</a></li>
+                                <li><a href="#" class="nav-link">ارجاع نقدية مصروفة</a></li>
+                                <li><a href="#" class="nav-link">حركة المصروفات</a></li>
+                                <li><a href="#" class="nav-link">حركة الصرف حسب الموظف</a></li>
+                                <li><a href="#" class="nav-link">اجمالى المصروفات</a></li>
+                                <li><a href="#" class="nav-link">تفاصيل اجمالى المصروفات</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الايرادات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">توريد نقدية</a></li>
+                                <li><a href="#" class="nav-link">ارجاع توريد</a></li>
+                                <li><a href="#" class="nav-link">حركة التوريدات</a></li>
+                                <li><a href="#" class="nav-link">حركة التوريد حسب الموظف</a></li>
+                                <li><a href="#" class="nav-link">اجمالى التوريدات</a></li>
+                                <li><a href="#" class="nav-link">تفاصيل اجمالى التوريدات</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الربح
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">صافى الربح</a></li>
+                                <li><a href="#" class="nav-link">تفاصيل صافى الربح</a></li>
+                                <li><a href="#" class="nav-link">الربح قبل الايرادات</a></li>
+                                <li><a href="#" class="nav-link">الربح قبل المصروفات</a></li>
+                                <li><a href="#" class="nav-link">الربح بدون مصروف معين</a></li>
+                                <li><a href="#" class="nav-link">الربح بدون ايراد معين</a></li>
+                                <li><a href="#" class="nav-link">الربح بدون ايراد معين</a></li>
+                                <li><a href="#" class="nav-link">افترض ربح وهمى</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                الحسبات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">فروع الحسابات</a></li>
+                                <li><a href="#" class="nav-link">تكوين فروع الحسابات</a></li>
+                                <li><a href="#" class="nav-link">دفتر اليومية</a></li>
+                                <li><a href="#" class="nav-link">دفتر الاستاذ</a></li>
+                                <li><a href="#" class="nav-link">الميزانية العمومية</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                البيانات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">استيراد بيانات من اكسيل</a></li>
+                                <li><a href="#" class="nav-link">استيراد بيانات من اكسس</a></li>
+                                <li><a href="#" class="nav-link">تصدير بيانات الى اكسيل</a></li>
+                                <li><a href="#" class="nav-link">تصدير بيانات من اكسيل</a></li>
+                                <li><a href="#" class="nav-link">انشاء نسخة احتياطية</a></li>
+                                <li><a href="#" class="nav-link">استعادة نسخة احتياطية</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                التقارير
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="nav-link">تقارير الاساس</a></li>
+                                <li><a href="#" class="nav-link">تقارير المخازن</a></li>
+                                <li><a href="#" class="nav-link">تقارير المشتريات</a></li>
+                                <li><a href="#" class="nav-link">تقارير المبيعات</a></li>
+                                <li><a href="#" class="nav-link">تقارير الايرادات والمصروفات</a></li>
+                                <li><a href="#" class="nav-link">تقارير الارباح والخسائر</a></li>
+                                <li><a href="#" class="nav-link">تقارير الارباح والخسائر</a></li>
+                                <li><a href="#" class="nav-link">تقارير الحسابات</a></li>
+                                <li><a href="#" class="nav-link">تقارير استخدامات البرنامج</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown text-end">
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">اللغة</a></li>
+                                <li><a class="dropdown-item" href="#">المستخدمين</a></li>
+                                <li><a class="dropdown-item" href="#">الصلاحيات</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
+                                <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+
+
+                    @*         <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">اللغة</a></li>
+                    <li><a class="dropdown-item" href="#">المستخدمين</a></li>
+                    <li><a class="dropdown-item" href="#">الصلاحيات</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
+                    <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                    </ul>
+                    </div>*@
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+
+
+
+
+
+        @*class="border-top footer text-muted"*@
+        <footer class="fixed-bottom">
+            <div class="container">
+                &copy; 2024 - Sales - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+
+
+
+
+
+
+
+
+   @*  <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SalesMvcCore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - SalesMvcCore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+ 
+</html>
+
+
+
+
+
