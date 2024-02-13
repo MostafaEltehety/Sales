@@ -27,17 +27,13 @@
 
     <body style="font-family: 'Noto Kufi Arabic', sans-serif;">
 
-        <header >
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+             @*    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> *@
 
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
-            <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarColor02">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-
 
 
                         <li class="nav-item dropdown">
@@ -200,8 +196,8 @@
 
 
 
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown text-end">
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                             </a>
                             <ul class="dropdown-menu">
@@ -215,14 +211,26 @@
                         </li>
 
 
+
+
                     </ul>
-                   
+
+
+
+
+ 
+                
+
+
                 </div>
             </div>
-        </nav>
+
+
+
+
         </header>
         <div class="container">
-            <main role="main" class="pt-5">
+            <main role="main" class="pb-3">
                 @RenderBody()
             </main>
         </div>
@@ -232,7 +240,8 @@
 
 
 
-         <footer class="fixed-bottom">
+        @*class="border-top footer text-muted"*@
+        <footer class="fixed-bottom">
             <div class="container">
                 &copy; 2024 - Sales - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             </div>
@@ -256,6 +265,41 @@
 
 
 
+
+
+   @*  <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SalesMvcCore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - SalesMvcCore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+ 
 </html>
 
 
